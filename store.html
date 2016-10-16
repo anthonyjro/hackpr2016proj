@@ -5,9 +5,6 @@
 <!-- Uses a transparent header that draws on top of the layout's background -->
 <style>
 .demo-layout-transparent {
-  background: url('assets/artesanias.jpg') top / cover;
-  background-size: 100% 30%;
-  background-repeat: no-repeat
 }
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
@@ -15,6 +12,7 @@
      your background is light. */
   color: white;
   text-shadow: 1px 1px black;
+  padding-bottom: 30%;
 }
 .demo-card-image.mdl-card {
   width: 256px;
@@ -31,11 +29,11 @@
 }
 </style>
 
-<div class="demo-layout-transparent mdl-layout mdl-js-layout">
-  <header class="mdl-layout__header mdl-layout__header--transparent">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout" >
+  <header class="mdl-layout__header mdl-layout__header--transparent" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/artesanias.jpg') no-repeat center / cover;">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">Title</span>
+      <span class="mdl-layout-title" style="font-size: xx-large;">La Tiendita Reyes</span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation -->
@@ -56,13 +54,11 @@
       <a class="mdl-navigation__link" href="">Link</a>
     </nav>
   </div>
-  <main class="mdl-layout__content">
-  </main>
   <div class="mdl-grid">
   <div class="demo-card-image mdl-card mdl-shadow--2dp" style="background: url('assets/vegigante.jpg') center / cover;">
   <div class="mdl-card__title mdl-card--expand"></div>
   <div class="mdl-card__actions">
-    <span class="demo-card-image__filename">Vegigante Mask
+    <span class="demo-card-image__filename">Vegigante Mask<br>$25
   </div>
 </div>
 <div class="demo-card-image mdl-card mdl-shadow--2dp" style="background: url('assets/magos2.png') center / cover;">
@@ -78,6 +74,26 @@
   </div>
 </div>
 </div>
+<div class="mdl-grid">
+  <div class="demo-card-image mdl-card mdl-shadow--2dp" style="background: url('assets/guiro.png') center / cover;">
+  <div class="mdl-card__title mdl-card--expand"></div>
+  <div class="mdl-card__actions">
+    <span class="demo-card-image__filename">Guiro
+  </div>
+</div>
+<div class="demo-card-image mdl-card mdl-shadow--2dp" style="background: url('assets/cuatro.png') center / cover;">
+  <div class="mdl-card__title mdl-card--expand"></div>
+  <div class="mdl-card__actions">
+    <span class="demo-card-image__filename">Cuatro</span>
+  </div>
+</div>
+<div class="demo-card-image mdl-card mdl-shadow--2dp" style="background: url('assets/dulces.png') center / cover;">
+  <div class="mdl-card__title mdl-card--expand"></div>
+  <div class="mdl-card__actions">
+    <span class="demo-card-image__filename">Surtido de Dulces</span>
+  </div>
+</div>
+</div>
   <footer class="mdl-mini-footer">
   <div class="mdl-mini-footer__left-section">
     <div class="mdl-logo">Title</div>
@@ -87,5 +103,4 @@
     </ul>
   </div>
 </footer>
-</div>
 
